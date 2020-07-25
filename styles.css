@@ -16,6 +16,12 @@ main {
   justify-content: center;
 }
 
+/* Font Family */
+
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
 /* Timer */
 .container {
     box-shadow: 2px 4px 2px rgba(0, 0, 0, .75);
@@ -103,4 +109,16 @@ main {
 .scramble-button:hover {
   color: #3D64FF;
   background-color: #FFF;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  color: #fff;
+  border: 1px solid white;
+  width: 50vw;
+  height: 20%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
