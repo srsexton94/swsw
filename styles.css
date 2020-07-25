@@ -68,23 +68,46 @@ body {
 
 /* Scramble */
 .scramble-box {
-  margin-top: 8em;
-  padding: 15px;
+  display: flex;
+  margin-top: 45vh;
   border-radius: 25px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
   background-color: #FFF;
   width: 45em;
-  height: 2em;
+  height: 3em;
   position: relative;
   bottom: 5vh;
 }
 
 #scrambleAlg {
-  font-size: 22px;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
-  padding: 10px 10px 15px;
+  /* border: 1px solid black; */
+  margin: 0;
+  margin-left: 2%;
+  margin-top: 1.5%;
   cursor: pointer;
   max-height: 240px;
+  width: 90%;
+  height: 60%;
   overflow-y: auto;
+}
+
+.scramble-button {
+  color: #fff;
+  background-color: #3D64FF;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #3D64FF;
+  border-top-right-radius: 38%;
+  border-bottom-right-radius: 38%;
+  width: 5em;
+  height: 100%;
+  opacity: .6;
+}
+
+.scramble-button:hover {
+  color: #3D64FF;
+  background-color: #FFF;
 }
