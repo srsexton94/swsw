@@ -48,7 +48,7 @@ document.body.onkeyup = function(e) {
 }
 
 document.body.addEventListener('click', function(e) {
-    if (e.target.id !== 'scramble-button') {
+    if (e.target.id !== 'scrambleBtn') {
         startStopTimer()
     }
 })
