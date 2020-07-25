@@ -1,0 +1,65 @@
+body {
+    background: url('./img/rubik.jpg') no-repeat center center scroll;
+    background-color: #fff;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, .75);
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #3D64FF;
+    width: 45em;
+    height: 16em;
+    position: absolute;
+    bottom: 5vh;
+}
+
+.screen {
+    margin: 0;
+    height: 9rem;
+    background-color: #dee0e3;
+    color: #3D64FF;
+    font-size: 124px;
+    border-radius: 15px;
+    padding: .5rem;
+    cursor: default;
+    text-align: center;
+    user-select: none;
+}
+
+.screen span {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin: .25rem 0;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 1em;
+}
+
+.buttons button {
+    flex: 1;
+    margin: 0 5px;
+    border: none;
+    height: 1.75em;
+    font-size: 36px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    font-weight: bold;
+    color: #dee0e3;
+    background-color: #902D41;
+}
+
+.buttons button:hover {
+    color: #902D41;
+    background-color: #dee0e3;
+}
