@@ -95,6 +95,8 @@ body {
 }
 
 .scramble-button {
+  background: url("./img/sync.png") no-repeat center center scroll;
+  background-size: contain;
   color: #fff;
   background-color: #3D64FF;
   margin: 0;
