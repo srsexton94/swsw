@@ -1,5 +1,8 @@
 const faces = ['R', 'U', 'F', 'B', 'L', 'D']
 const rotation = ['', '2', "'"]
+const scrambleAlg = document.getElementById('scrambleAlg')
+const scrambleButton = document.getElementById("scrambleBtn").onclick = scrambleClick
+
 
 const  generateScramble = function() {
   let scramble = []
@@ -17,11 +20,11 @@ const  generateScramble = function() {
     }
     move = ''
   }
-  console.log(scramble.length)
+  scrambleAlg.innerHTML = scramble.join(' ')
+  // console.log(scramble.length)
   return scramble
 }
 
-export default (
-  generateScramble
-)
- 
+function scrambleClick(clicked) {
+  generateScramble()
+}
