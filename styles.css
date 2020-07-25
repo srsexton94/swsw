@@ -6,9 +6,10 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
+/* Timer */
 .container {
     box-shadow: 2px 4px 2px rgba(0, 0, 0, .75);
     padding: 15px;
@@ -64,4 +65,53 @@ body {
 .buttons button:hover {
     color: #902D41;
     background-color: #dee0e3;
+}
+
+
+/* Scramble */
+.scramble-box {
+  display: flex;
+  margin-top: 45vh;
+  border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+  background-color: #FFF;
+  width: 45em;
+  height: 3em;
+  position: relative;
+  bottom: 5vh;
+}
+
+#scrambleAlg {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid black; */
+  margin: 0;
+  margin-left: 2%;
+  margin-top: 1.5%;
+  cursor: pointer;
+  max-height: 240px;
+  width: 90%;
+  height: 60%;
+  overflow-y: auto;
+}
+
+.scramble-button {
+  background: url("./img/sync.png") no-repeat center center scroll;
+  background-size: contain;
+  color: #fff;
+  background-color: #3D64FF;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #3D64FF;
+  border-top-right-radius: 38%;
+  border-bottom-right-radius: 38%;
+  width: 5em;
+  height: 100%;
+  opacity: .6;
+}
+
+.scramble-button:hover {
+  color: #3D64FF;
+  background-color: #FFF;
 }
