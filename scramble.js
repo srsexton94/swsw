@@ -3,7 +3,6 @@ const rotation = ['', '2', "'"]
 const scrambleAlg = document.getElementById('scrambleAlg')
 document.getElementById("scrambleBtn").onclick = scrambleClick
 
-
 const  generateScramble = function() {
   let scramble = []
   let move
@@ -21,7 +20,6 @@ const  generateScramble = function() {
     move = ''
   }
   scrambleAlg.innerHTML = scramble.join(' ')
-  // console.log(scramble.length)
   return scramble
 }
 
