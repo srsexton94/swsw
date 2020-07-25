@@ -57,6 +57,8 @@ class Stopwatch {
             suspended: this.state.difference
         })
         } else {
+            cancelAnimationFrame(this.requestAnimationId)
+            this.setState(State.ready())
             this.setState({
                 startTimestamp: new Date() - this.state.suspended,
                 suspended: 0
