@@ -14,6 +14,10 @@ class Stopwatch {
     constructor(state) {
         this.state = state
         this.requestAnimationId = null
+
+        this.handleSpacebar = this.handleSpacebar.bind(this)
+        document.body
+            .onkeyup = this.handleSpacebar
         
         this.handleClickStart = this.handleClickStart.bind(this)
         document
@@ -24,11 +28,6 @@ class Stopwatch {
         document
             .getElementById("stop")
             .addEventListener("click", this.handleClickStop)
-        
-        this.handleClickReset = this.handleClickReset.bind(this)
-        document
-            .getElementById("reset")
-            .addEventListener("click", this.handleClickReset)
         
         this.tick = this.tick.bind(this)
         this.render()
@@ -50,11 +49,30 @@ class Stopwatch {
         this.requestAnimationId = requestAnimationFrame(this.tick)
     }
 
+    handleSpacebar() {
+        if (this.state.startTimestamp) {
+            cancelAnimationFrame(this.requestAnimationId)
+            this.setState({
+            startTimestamp: null,
+            suspended: this.state.difference
+        })
+        } else {
+            cancelAnimationFrame(this.requestAnimationId)
+            this.setState(State.ready())
+            this.setState({
+                startTimestamp: new Date() - this.state.suspended,
+                suspended: 0
+            })
+            this.requestAnimationId = requestAnimationFrame(this.tick)
+        }
+    }
+
     handleClickStart() {
         if (this.state.startTimestamp) {
-            // Prevent multi clicks on start
             return
         }
+        cancelAnimationFrame(this.requestAnimationId)
+        this.setState(State.ready())
         this.setState({
             startTimestamp: new Date() - this.state.suspended,
             suspended: 0
@@ -68,11 +86,6 @@ class Stopwatch {
             startTimestamp: null,
             suspended: this.state.difference
         })
-    }
-
-    handleClickReset() {
-        cancelAnimationFrame(this.requestAnimationId)
-        this.setState(State.ready())
     }
 
     render() {
