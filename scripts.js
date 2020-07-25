@@ -25,12 +25,10 @@ function startTimer() {
     hundredths = 0
     seconds = 0
     minutes = 0
-    runInt = setInterval(tick, 1)
-    console.log('running: ', running)	
+    runInt = setInterval(tick, 1)	
 }
 function stopTimer() {
     clearInterval(runInt)
-    console.log('running: ', running)
 }
 
 function startStopTimer() {
@@ -43,8 +41,14 @@ function startStopTimer() {
   }
 }
 
-document.body.onkeyup = function(e){
+document.body.onkeyup = function(e) {
     if (e.code === 'Space') {
         startStopTimer()
     }
 }
+
+document.body.addEventListener('click', function(e) {
+    if (e.target.id !== 'scramble-button') {
+        startStopTimer()
+    }
+})
