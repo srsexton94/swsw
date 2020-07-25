@@ -6,9 +6,10 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
+/* Timer */
 .container {
     box-shadow: 2px 4px 2px rgba(0, 0, 0, .75);
     padding: 15px;
@@ -62,4 +63,27 @@ body {
 .buttons button:hover {
     color: #902D41;
     background-color: #dee0e3;
+}
+
+
+/* Scramble */
+.scramble-box {
+  margin-top: 8em;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #FFF;
+  width: 45em;
+  height: 2em;
+  position: relative;
+  bottom: 5vh;
+}
+
+#scrambleAlg {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 10px 15px;
+  cursor: pointer;
+  max-height: 240px;
+  overflow-y: auto;
 }
