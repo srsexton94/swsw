@@ -1,7 +1,7 @@
 const faces = ['R', 'U', 'F', 'B', 'L', 'D']
 const rotation = ['', '2', "'"]
 const scrambleAlg = document.getElementById('scrambleAlg')
-const scrambleButton = document.getElementById("scrambleBtn").onclick = scrambleClick
+document.getElementById("scrambleBtn").onclick = scrambleClick
 
 
 const  generateScramble = function() {

@@ -25,7 +25,7 @@ function startTimer() {
     hundredths = 0
     seconds = 0
     minutes = 0
-    runInt = setInterval(tick, 1)	
+    runInt = setInterval(tick, 1)
 }
 function stopTimer() {
     clearInterval(runInt)
@@ -43,6 +43,7 @@ function startStopTimer() {
 
 document.body.onkeyup = function(e) {
     if (e.code === 'Space') {
+        e.preventDefault()
         startStopTimer()
     }
 }
