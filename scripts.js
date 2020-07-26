@@ -26,7 +26,7 @@ function startTimer() {
     hundredths = 0
     seconds = 0
     minutes = 0
-    runInt = setInterval(tick, 1)
+    runInt = setInterval(tick, 10)
 }
 function stopTimer() {
     clearInterval(runInt)
