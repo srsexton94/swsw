@@ -3,7 +3,7 @@
 ## Project Description
 A Rubik's cube algorithm generator and stopwatch built out of HTML, CSS, and vanilla JavaScript. 
 This project features a stopwatch designed for competition - accepting both clicks and space bar to stop and start the time, and with automatic resets on start. 
-It also provides a Rubik's cube algorithm generator, to offer competitors a randomized puzzle algorithm to solve.
+It also provides a scramble generator that adheres to the guidelines provided by the World Cube Association, so the user can have a properly randomized puzzle every time!
 
 ### Screenshots
 
