@@ -86,4 +86,7 @@ function scrambleClick(clicked) {
     generateScramble()
 }
 
-const jsLoad = () => document.body.style.visibility='visible'
+const jsLoad = function() {
+    document.body.style.visibility='visible'
+    generateScramble()
+}
