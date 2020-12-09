@@ -86,4 +86,7 @@ function scrambleClick(clicked) {
     generateScramble()
 }
 
-document.getElementById('scrambleAlg').addEventListener("load", generateScramble())
+const jsLoad = function() {
+    document.body.style.visibility='visible'
+    generateScramble()
+}

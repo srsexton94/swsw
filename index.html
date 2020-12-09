@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Solve White, Stop Watch</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Solve White, Stop Watch</title>
         <link rel="icon" href="./img/icon48.png">
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-      <h1 class="title">Solve White, Stop Watch</h1>
-        <main>
-            <div id="scrambleBox" class="scramble-box">
-                <div id="scrambleAlg"></div>
-                <button id="scrambleBtn" class="scramble-button"></button>
-            </div>
-            <div class="container">
-                <h1 class="screen">
-                    <span id="minutes">00</span>&nbsp;&nbsp;:
-                    <span id="seconds">00</span>&nbsp;&nbsp;:
-                    <span id="hundredths">00</span>
-                </h1>
-                <p>Click anywhere or tap Spacebar to start, or hold down and release when ready.</p>
-                <p>Click/tap again to stop!</p>
-            </div>
-        </main>
-        <script src="scripts.js"></script>
-        <script src="scramble.js"></script>
+    <body style="visibility: hidden;" onload="jsLoad()">
+        <h1 class="title">Solve White, Stop Watch</h1>
+            <main>
+                <div id="scrambleBox" class="scramble-box">
+                    <div id="scrambleAlg"></div>
+                    <button id="scrambleBtn" class="scramble-button"></button>
+                </div>
+                <div class="container">
+                    <h1 class="screen">
+                        <span id="minutes">00</span>&nbsp;&nbsp;:
+                        <span id="seconds">00</span>&nbsp;&nbsp;:
+                        <span id="hundredths">00</span>
+                    </h1>
+                    <p>Click anywhere or tap Spacebar to start, or hold down and release when ready.</p>
+                    <p>Click/tap again to stop!</p>
+                </div>
+            </main>
+            <script src="scripts.js"></script>
+            <script src="scramble.js"></script>
     </body>
 </html>
